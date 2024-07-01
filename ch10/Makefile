@@ -17,5 +17,6 @@ send/%:
 	--data @task$*.json \
 	localhost:5556/tasks | jq
 
-delete/%:
-	curl -s --request DELETE "localhost:5556/tasks/$*"
+delete:
+	@echo 'curl -s --request DELETE "localhost:5556/tasks/xxxxx"'
+
